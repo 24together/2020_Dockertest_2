@@ -1,0 +1,211 @@
+2020-05-07 14:21:03 Error: [PDOException] SQLSTATE[HY000] [1045] Access denied for user 'my_app'@'localhost' (using password: YES) in C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Driver.php on line 92
+Stack Trace:
+#0 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Driver.php(92): PDO->__construct('mysql:host=loca...', 'my_app', 'secret', Array)
+#1 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(105): Cake\Database\Driver->_connect('mysql:host=loca...', Array)
+#2 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(44): Cake\Database\Driver\Mysql->connect()
+#3 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(62): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(51): Cake\Database\Driver\Mysql->schemaDialect()
+#5 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(41): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Connection.php(390): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1096): Cake\Database\Connection->getSchemaCollection()
+#8 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1050): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(213): Bake\Shell\Task\ModelTask->listAll()
+#10 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#11 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'users', 'Users')
+#12 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Users')
+#13 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\Shell.php(531): Bake\Shell\Task\ModelTask->main('Users')
+#14 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\Shell.php(524): Cake\Console\Shell->runCommand(Array, false, Array)
+#15 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\CommandRunner.php(385): Cake\Console\Shell->runCommand(Array, true)
+#16 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#17 C:\Users\minye\my_first\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2020-05-07 14:23:35 Error: [PDOException] SQLSTATE[HY000] [1045] Access denied for user 'my_app'@'localhost' (using password: YES) in C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Driver.php on line 92
+Stack Trace:
+#0 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Driver.php(92): PDO->__construct('mysql:host=loca...', 'my_app', 'secret', Array)
+#1 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(105): Cake\Database\Driver->_connect('mysql:host=loca...', Array)
+#2 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(44): Cake\Database\Driver\Mysql->connect()
+#3 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(62): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(51): Cake\Database\Driver\Mysql->schemaDialect()
+#5 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(41): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Connection.php(390): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1096): Cake\Database\Connection->getSchemaCollection()
+#8 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1050): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(213): Bake\Shell\Task\ModelTask->listAll()
+#10 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#11 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'users', 'Users')
+#12 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Users')
+#13 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\Shell.php(531): Bake\Shell\Task\ModelTask->main('Users')
+#14 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\Shell.php(524): Cake\Console\Shell->runCommand(Array, false, Array)
+#15 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\CommandRunner.php(385): Cake\Console\Shell->runCommand(Array, true)
+#16 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#17 C:\Users\minye\my_first\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2020-05-07 14:31:02 Error: [PDOException] SQLSTATE[HY000] [1045] Access denied for user 'my_app'@'localhost' (using password: NO) in C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Driver.php on line 92
+Stack Trace:
+#0 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Driver.php(92): PDO->__construct('mysql:host=loca...', 'my_app', '', Array)
+#1 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(105): Cake\Database\Driver->_connect('mysql:host=loca...', Array)
+#2 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(44): Cake\Database\Driver\Mysql->connect()
+#3 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(62): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(51): Cake\Database\Driver\Mysql->schemaDialect()
+#5 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(41): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Connection.php(390): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1096): Cake\Database\Connection->getSchemaCollection()
+#8 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1050): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(213): Bake\Shell\Task\ModelTask->listAll()
+#10 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#11 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'users', 'Users')
+#12 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Users')
+#13 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\Shell.php(531): Bake\Shell\Task\ModelTask->main('Users')
+#14 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\Shell.php(524): Cake\Console\Shell->runCommand(Array, false, Array)
+#15 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\CommandRunner.php(385): Cake\Console\Shell->runCommand(Array, true)
+#16 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#17 C:\Users\minye\my_first\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2020-05-07 14:33:39 Error: [PDOException] SQLSTATE[HY000] [1049] Unknown database 'young' in C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Driver.php on line 92
+Stack Trace:
+#0 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Driver.php(92): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(105): Cake\Database\Driver->_connect('mysql:host=loca...', Array)
+#2 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(44): Cake\Database\Driver\Mysql->connect()
+#3 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(62): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(51): Cake\Database\Driver\Mysql->schemaDialect()
+#5 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(41): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Connection.php(390): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1096): Cake\Database\Connection->getSchemaCollection()
+#8 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1050): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(213): Bake\Shell\Task\ModelTask->listAll()
+#10 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#11 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'users', 'Users')
+#12 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Users')
+#13 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\Shell.php(531): Bake\Shell\Task\ModelTask->main('Users')
+#14 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\Shell.php(524): Cake\Console\Shell->runCommand(Array, false, Array)
+#15 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\CommandRunner.php(385): Cake\Console\Shell->runCommand(Array, true)
+#16 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#17 C:\Users\minye\my_first\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2020-05-07 14:38:15 Error: [PDOException] SQLSTATE[HY000] [1049] Unknown database 'young' in C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Driver.php on line 92
+Stack Trace:
+#0 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Driver.php(92): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(105): Cake\Database\Driver->_connect('mysql:host=loca...', Array)
+#2 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(44): Cake\Database\Driver\Mysql->connect()
+#3 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(62): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(51): Cake\Database\Driver\Mysql->schemaDialect()
+#5 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(41): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Connection.php(390): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1096): Cake\Database\Connection->getSchemaCollection()
+#8 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1050): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(213): Bake\Shell\Task\ModelTask->listAll()
+#10 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#11 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'users', 'Users')
+#12 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Users')
+#13 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\Shell.php(531): Bake\Shell\Task\ModelTask->main('Users')
+#14 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\Shell.php(524): Cake\Console\Shell->runCommand(Array, false, Array)
+#15 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\CommandRunner.php(385): Cake\Console\Shell->runCommand(Array, true)
+#16 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#17 C:\Users\minye\my_first\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2020-05-07 14:52:42 Error: [PDOException] SQLSTATE[HY000] [1049] Unknown database 'young' in C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Driver.php on line 92
+Stack Trace:
+#0 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Driver.php(92): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(105): Cake\Database\Driver->_connect('mysql:host=loca...', Array)
+#2 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(44): Cake\Database\Driver\Mysql->connect()
+#3 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(62): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(51): Cake\Database\Driver\Mysql->schemaDialect()
+#5 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(41): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Connection.php(390): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1096): Cake\Database\Connection->getSchemaCollection()
+#8 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1050): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(213): Bake\Shell\Task\ModelTask->listAll()
+#10 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#11 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'users', 'Users')
+#12 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Users')
+#13 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\Shell.php(531): Bake\Shell\Task\ModelTask->main('Users')
+#14 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\Shell.php(524): Cake\Console\Shell->runCommand(Array, false, Array)
+#15 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\CommandRunner.php(385): Cake\Console\Shell->runCommand(Array, true)
+#16 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#17 C:\Users\minye\my_first\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2020-05-07 14:54:38 Error: [PDOException] SQLSTATE[HY000] [1049] Unknown database 'young' in C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Driver.php on line 92
+Stack Trace:
+#0 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Driver.php(92): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(105): Cake\Database\Driver->_connect('mysql:host=loca...', Array)
+#2 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(44): Cake\Database\Driver\Mysql->connect()
+#3 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(62): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(51): Cake\Database\Driver\Mysql->schemaDialect()
+#5 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(41): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Connection.php(390): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1096): Cake\Database\Connection->getSchemaCollection()
+#8 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1050): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(213): Bake\Shell\Task\ModelTask->listAll()
+#10 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#11 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'users', 'Users')
+#12 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Users')
+#13 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\Shell.php(531): Bake\Shell\Task\ModelTask->main('Users')
+#14 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\Shell.php(524): Cake\Console\Shell->runCommand(Array, false, Array)
+#15 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\CommandRunner.php(385): Cake\Console\Shell->runCommand(Array, true)
+#16 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#17 C:\Users\minye\my_first\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2020-05-07 14:55:10 Error: [PDOException] SQLSTATE[HY000] [1049] Unknown database 'young' in C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Driver.php on line 92
+Stack Trace:
+#0 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Driver.php(92): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(105): Cake\Database\Driver->_connect('mysql:host=127....', Array)
+#2 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(44): Cake\Database\Driver\Mysql->connect()
+#3 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(62): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(51): Cake\Database\Driver\Mysql->schemaDialect()
+#5 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(41): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Database\Connection.php(390): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1096): Cake\Database\Connection->getSchemaCollection()
+#8 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1050): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(213): Bake\Shell\Task\ModelTask->listAll()
+#10 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#11 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'users', 'Users')
+#12 C:\Users\minye\my_first\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Users')
+#13 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\Shell.php(531): Bake\Shell\Task\ModelTask->main('Users')
+#14 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\Shell.php(524): Cake\Console\Shell->runCommand(Array, false, Array)
+#15 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\CommandRunner.php(385): Cake\Console\Shell->runCommand(Array, true)
+#16 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#17 C:\Users\minye\my_first\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2020-05-08 08:34:20 Error: [Error] Class 'Route' not found in C:\Users\minye\my_first\config\routes.php on line 22
+Stack Trace:
+#0 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Http\BaseApplication.php(178): require()
+#1 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\CommandRunner.php(420): Cake\Http\BaseApplication->routes(Object(Cake\Routing\RouteBuilder))
+#2 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\CommandRunner.php(146): Cake\Console\CommandRunner->loadRoutes()
+#3 C:\Users\minye\my_first\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#4 {main}
+
+
+2020-05-08 08:34:41 Error: [Error] Class 'Route' not found in C:\Users\minye\my_first\config\routes.php on line 22
+Stack Trace:
+#0 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Http\BaseApplication.php(178): require()
+#1 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\CommandRunner.php(420): Cake\Http\BaseApplication->routes(Object(Cake\Routing\RouteBuilder))
+#2 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\CommandRunner.php(146): Cake\Console\CommandRunner->loadRoutes()
+#3 C:\Users\minye\my_first\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#4 {main}
+
+
+2020-05-08 08:34:50 Error: [Error] Call to undefined method Cake\Routing\Router::get() in C:\Users\minye\my_first\config\routes.php on line 22
+Stack Trace:
+#0 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Http\BaseApplication.php(178): require()
+#1 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\CommandRunner.php(420): Cake\Http\BaseApplication->routes(Object(Cake\Routing\RouteBuilder))
+#2 C:\Users\minye\my_first\vendor\cakephp\cakephp\src\Console\CommandRunner.php(146): Cake\Console\CommandRunner->loadRoutes()
+#3 C:\Users\minye\my_first\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#4 {main}
+
+
