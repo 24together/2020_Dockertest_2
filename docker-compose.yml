@@ -13,7 +13,7 @@
     container_name: cake3-nginx
 
   phpfpm:
-    build: ./phpfpm/
+    build: ./docker/phpfpm/
     links:
       - mysql
       #パスにエラーが出た部分
