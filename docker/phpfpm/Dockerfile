@@ -27,5 +27,5 @@ RUN php -r "if (hash_file('sha384', 'composer-setup.php') === 'e0012edf3e80b6978
 RUN php composer-setup.php --install-dir=/usr/local/bin/ --filename=composer 
 RUN php -r "unlink('composer-setup.php');"
 #パスにエラーが出た部分
-RUN mv composer.phar /usr/local/bin/composer
+# RUN mv composer.phar /usr/local/bin/composer
 RUN docker-php-ext-install intl pdo_mysql mbstring
